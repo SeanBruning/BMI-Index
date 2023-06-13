@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Body Mass Index Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+   <header id="header">
+        <h1>Body Mass Index Calculator</h1><br>
+    </header>
+        <body>
+            <h2>Enter Your Information:</h2><br>
+            <form onsubmit="calculateBMI(); return false;">
+            <div class ="weight">
+              <label for="weight">Weight (kg):</label>
+              <input type="number" id="weight" required>
+            </div>
+              <br>
+            <div class ="height">
+              <label for="height">Height (cm):</label>
+              <input type="number" id="height" required>
+            </div>
+              <br>
+            <div class ="gender">
+              <label for="gender">Gender:</label>
+              <select id="gender" required>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+              </select>
+            </div>
+              <br>
+            <div class ="calculate">
+              <input type="submit" value="Calculate">
+            </div>
+            </form>
+          
+            <h2>Result:</h2>
+            <br>
+            <div id="result"></div>
+            <br>
+            <div class="Dropdown">
+                <button id="DropDown-Button">What is a BMI Index?</button>
+                    <div class="Dropdown-Menu">
+                    <p>
+                        BMI (Body Mass Index) is a numerical value calculated based on a person's height and weight. It is commonly used as an indicator of whether a person has a healthy body weight relative to their height.<br><br>The formula for calculating BMI is as follows:
+                        weight (kg) / [height (m)]2 = BMI<br><br>
+                        The resulting BMI value is then categorized into different ranges that generally correspond to different levels of weight and health:
+                    <ul>
+                       <li> Underweight: BMI below 18.5</li>
+                       <li> Normal weight: BMI between 18.5 and 24.9</li>
+                       <li> Overweight: BMI between 25 and 29.9</li>
+                       <li> Obesity (Class I): BMI between 30 and 34.9</li>
+                       <li> Obesity (Class II): BMI between 35 and 39.9</li>
+                       <li> Obesity (Class III): BMI of 40 or higher</li>
+                    </ul>
+                        It's important to note that while BMI provides a rough estimate of a person's body fatness, it does not directly measure body fat percentage or distribution.<br>Therefore, it may not be applicable to athletes, bodybuilders, or individuals with a significant amount of muscle mass, as muscle weighs more than fat.<br>Additionally, other factors such as age, gender, and overall health should be taken into consideration when assessing an individual's health status.<br>Consulting with a healthcare professional can provide a more comprehensive evaluation of one's weight and overall health.
+                    </p>
+                    </div>
+                </div>
+</body>
+</html>
